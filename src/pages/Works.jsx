@@ -14,7 +14,7 @@ function Works() {
 
     useEffect(() => {
         // Fetch the JSON data from your server
-        fetch('https://freelance-backend-yfpi.onrender.com/users')
+        fetch('http://localhost:5000/users')
             .then((response) => response.json())
             .then((data) => {
                 // Assuming your server provides image data in a field called 'image'
@@ -34,11 +34,11 @@ function Works() {
     }, []);
     return (
         <div className='body'>
-            <div className='d-flex justify-content-between m-5 container mt-5'>
+            <div className='d-flex justify-content-between container mt-5'>
                 <h3 style={{ marginLeft: "100px" }}>Projects</h3>
                 <Link to={'/'}><Button className='btn btn-dark'><i style={{ marginRight: '10px' }} class="fa-solid fa-arrow-left"></i>Back to home</Button></Link>
             </div>
-            <div className='mt-5 d-flex justify-content-center align-items-center project-container'>
+            <div  className='mt-5 d-flex justify-content-center align-items-center project-container'>
                 <div className="project-card">
                     <a href="#" className="project-link">
                         <img src={imageData1} alt="" className="project-image" />
@@ -85,7 +85,7 @@ function Works() {
                 </div>
                 <div className="project-card">
                     <a href="#" className="project-link">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/008/533/393/small/ad-artistic-letter-logo-design-with-serif-font-in-black-and-white-colors-illustration-vector.jpg" alt="" className="project-image" />
+                        <img src="https://images3.alphacoders.com/132/1326193.png" alt="" className="project-image" />
                         <div className="over flex-column">
                             <Card style={{ width: '18rem' }}>
                             <Card.Body>
@@ -107,7 +107,7 @@ function Works() {
                 </div>
                 <div className="project-card">
                     <a href="#" className="project-link">
-                        <img src="https://t4.ftcdn.net/jpg/03/13/96/89/360_F_313968921_tqgzvlF9UJ9BFBLdnl1z8KiS8KdCGJa0.jpg" alt="" className="project-image" />
+                        <img src="https://a-static.besthdwallpaper.com/astronaut-girl-digital-art-wallpaper-3554x1999-80726_53.jpg" alt="" className="project-image" />
                         <div className="over flex-column">
                             <Card style={{ width: '18rem' }}>
                             <Card.Body>
