@@ -35,7 +35,7 @@ function Profile() {
   const deleted = async () => {
     try {
       // Send a DELETE request to delete the entire "users" array
-      const response = await axios.delete(`http://localhost:5000/users/2`);
+      const response = await axios.delete(`https://freelance-backend-yfpi.onrender.com/users/2`);
       // Handle the response if needed
       console.log(response.data); // You can log the response data or perform additional actions
   
