@@ -4,6 +4,7 @@ import Add from '../components/Add';
 import MyProfile from '../components/MyProfile';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import axios from 'axios';
 
 function Profile() {
   const [firstname,setFirstname] = useState('');
@@ -31,6 +32,20 @@ function Profile() {
       
   }, []);
   
+  const deleted = async () => {
+    try {
+      // Send a DELETE request to delete the entire "users" array
+      const response = await axios.delete(`http://localhost:5000/users/2`);
+      // Handle the response if needed
+      console.log(response.data); // You can log the response data or perform additional actions
+  
+    } catch (error) {
+      // Handle errors
+      console.error('Error deleting the "users" array:', error);
+    }
+    window.location.reload();
+  };
+
 
   return (
     <>
@@ -51,6 +66,7 @@ function Profile() {
           {pro &&
             <div style={{border:'none'}} className='mt-5 ms-3 test'>
             <img className='rounded' src={pro}/>
+            <button onClick={deleted} className='btn btn-danger rounded'><i class="fa-sharp fa-solid fa-trash "></i></button>
           </div>}
         </Col>
       </Row>

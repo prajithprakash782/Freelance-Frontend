@@ -39,17 +39,16 @@ video{
   width: 100px;
 }
 
-.test img {
-
-  transition: all 0.3s;
-
+.test{
+  position: relative;
   width: 250px;
-  height: 200px;
- 
-  
-
-
 }
+.test button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+  
 .test:hover img{
   transform: scale(1.1);
 }
