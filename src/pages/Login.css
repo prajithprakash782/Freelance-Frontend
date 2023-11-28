@@ -1,0 +1,13 @@
+.reg-img{
+    background-image: url('../Assets/secbg.jpg');
+    background-position: right;
+   
+}
+
+.bg-img{
+    background-image: url('../Assets/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
