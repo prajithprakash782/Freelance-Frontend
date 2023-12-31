@@ -65,7 +65,7 @@ function Profile() {
           {/* Add other components or content here */}
           {pro &&
             <div style={{border:'none'}} className='mt-5 ms-3 test'>
-            <img className='rounded' src={pro}/>
+            <img style={{width:'18rem'}} className='rounded' src={pro}/>
             <button onClick={deleted} className='btn btn-danger rounded'><i class="fa-sharp fa-solid fa-trash "></i></button>
           </div>}
         </Col>
