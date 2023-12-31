@@ -14,7 +14,7 @@ function Works() {
 
     useEffect(() => {
         // Fetch the JSON data from your server
-        fetch('http://localhost:5000/users')
+        fetch('https://freelance-backend-yfpi.onrender.com/users')
             .then((response) => response.json())
             .then((data) => {
                 // Assuming your server provides image data in a field called 'image'
@@ -85,7 +85,7 @@ function Works() {
                 </div>
                 <div className="project-card">
                     <a href="#" className="project-link">
-                        <img src="https://images3.alphacoders.com/132/1326193.png" alt="" className="project-image" />
+                        <img src="https://img.freepik.com/premium-photo/woman-s-face-is-made-up-geometric-shapes-cyberpunk-colorful-fractalism-cubism_834088-1.jpg" alt="" className="project-image" />
                         <div className="over flex-column">
                             <Card style={{ width: '18rem' }}>
                             <Card.Body>
